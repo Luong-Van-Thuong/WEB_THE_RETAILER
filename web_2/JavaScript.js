@@ -6,77 +6,77 @@
     let visibleStart = 0; // Vị trí phần tử đầu tiên hiển thị
     const visibleCount = 5; // Số phần tử hiển thị cùng lúc
 
-    //function updateVisibility() {
-    //    // Duyệt qua tất cả các phần tử và kiểm tra điều kiện hiển thị
-    //    contents.forEach((content, index) => {
-    //        if (index >= visibleStart && index < visibleStart + visibleCount) {
-    //            content.style.display = 'grid'; // Hiển thị các phần tử trong phạm vi
-    //        } else {
-    //            content.style.display = 'none'; // Ẩn các phần tử ngoài phạm vi
-    //        }
-    //    });
-    //}
+    function updateVisibility() {
+        // Duyệt qua tất cả các phần tử và kiểm tra điều kiện hiển thị
+        contents.forEach((content, index) => {
+            if (index >= visibleStart && index < visibleStart + visibleCount) {
+                content.style.display = 'grid'; // Hiển thị các phần tử trong phạm vi
+            } else {
+                content.style.display = 'none'; // Ẩn các phần tử ngoài phạm vi
+            }
+        });
+    }
 
-    //// Thêm sự kiện cho Button "Next"
-    //button2.addEventListener('click', () => {
-    //    if (visibleStart + visibleCount < contents.length) {
-    //        visibleStart += 1; // Tăng vị trí hiển thị thêm 2
-    //        console.log(visibleStart)
-    //        updateVisibility();
-    //    }
-    //    console.log("Nhan >")
-    //});
-    //button3.addEventListener('click', () => {
-    //    console.log("nhan +")
-    //    if (visibleStart > 0) {
-    //        visibleStart -= 1; // Giảm vị trí hiển thị đi 2
-    //        console.log(visibleStart)
-    //        updateVisibility();
-    //    }
-    //});
-    //// Gọi hàm cập nhật hiển thị lần đầu
-    //updateVisibility();
+    // Thêm sự kiện cho Button "Next"
+    button2.addEventListener('click', () => {
+        if (visibleStart + visibleCount < contents.length) {
+            visibleStart += 1; // Tăng vị trí hiển thị thêm 2
+            console.log(visibleStart)
+            updateVisibility();
+        }
+        console.log("Nhan >")
+    });
+    button3.addEventListener('click', () => {
+        console.log("nhan +")
+        if (visibleStart > 0) {
+            visibleStart -= 1; // Giảm vị trí hiển thị đi 2
+            console.log(visibleStart)
+            updateVisibility();
+        }
+    });
+    // Gọi hàm cập nhật hiển thị lần đầu
+    updateVisibility();
 
-    //const contents_hoodie = document.querySelectorAll('.ao-hoodie2-2'); // Lấy tất cả các phần tử .content
-    //const button2_hoodie = document.querySelector('.button-ao-hoodie-2'); // Button Next
-    //const button3_hoodie = document.querySelector('.button-ao-hoodie-3');
+    const contents_hoodie = document.querySelectorAll('.ao-hoodie2-2'); // Lấy tất cả các phần tử .content
+    const button2_hoodie = document.querySelector('.button-ao-hoodie-2'); // Button Next
+    const button3_hoodie = document.querySelector('.button-ao-hoodie-3');
 
-    //let visibleStart_hoodie =  1; // Vị trí phần tử đầu tiên hiển thị
-    //const visibleCount_hoodie =  5; // Số phần tử hiển thị cùng lúc
+    let visibleStart_hoodie =  1; // Vị trí phần tử đầu tiên hiển thị
+    const visibleCount_hoodie =  5; // Số phần tử hiển thị cùng lúc
     
-    //function updateVisibility_hoodie() {
-    //    // Duyệt qua tất cả các phần tử và kiểm tra điều kiện hiển thị
-    //    contents_hoodie.forEach((content, index) => {
-    //        if (index >= visibleStart_hoodie && index < visibleStart_hoodie + visibleCount_hoodie) {
-    //            content.style.display = 'grid'; // Hiển thị các phần tử trong phạm vi
-    //        } else {
-    //            content.style.display = 'none'; // Ẩn các phần tử ngoài phạm vi
-    //        }
-    //    });
-    //}
+    function updateVisibility_hoodie() {
+        // Duyệt qua tất cả các phần tử và kiểm tra điều kiện hiển thị
+        contents_hoodie.forEach((content, index) => {
+            if (index >= visibleStart_hoodie && index < visibleStart_hoodie + visibleCount_hoodie) {
+                content.style.display = 'grid'; // Hiển thị các phần tử trong phạm vi
+            } else {
+                content.style.display = 'none'; // Ẩn các phần tử ngoài phạm vi
+            }
+        });
+    }
 
-    //// Thêm sự kiện cho Button "Next"
-    //button2_hoodie.addEventListener('click', () => {
-    //    if (visibleStart_hoodie + visibleCount_hoodie < contents_hoodie.length) {
-    //        visibleStart_hoodie += 1; // Tăng vị trí hiển thị thêm 2
-    //        console.log(visibleStart_hoodie)
-    //        updateVisibility_hoodie();
-    //    }
-    //    console.log("Nhan >")
-    //});
+    // Thêm sự kiện cho Button "Next"
+    button2_hoodie.addEventListener('click', () => {
+        if (visibleStart_hoodie + visibleCount_hoodie < contents_hoodie.length) {
+            visibleStart_hoodie += 1; // Tăng vị trí hiển thị thêm 2
+            console.log(visibleStart_hoodie)
+            updateVisibility_hoodie();
+        }
+        console.log("Nhan >")
+    });
 
 
-    //button3_hoodie.addEventListener('click', () => {
-    //    console.log("nhan -")
-    //    if (visibleStart_hoodie > 0) {
-    //        visibleStart_hoodie -= 1; // Giảm vị trí hiển thị đi 2
+    button3_hoodie.addEventListener('click', () => {
+        console.log("nhan -")
+        if (visibleStart_hoodie > 0) {
+            visibleStart_hoodie -= 1; // Giảm vị trí hiển thị đi 2
             
-    //        updateVisibility_hoodie();
-    //    }
-    //    console.log(visibleStart_hoodie)
-    //});
+            updateVisibility_hoodie();
+        }
+        console.log(visibleStart_hoodie)
+    });
 
-   /* updateVisibility_hoodie()*/
+    updateVisibility_hoodie()
 
     /*Tạo reposive cho chân trang*/
     const dau3cham = document.querySelector('.allproductreponsive');

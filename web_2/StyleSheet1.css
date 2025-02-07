@@ -261,7 +261,7 @@
 }
 .button-ao-khoac-2 {
     position: absolute;
-    right: 0px;
+    right: 1%;
     width: 30px !important;
     height: 30px;
     text-align: center;
@@ -272,7 +272,7 @@
 
 .button-ao-khoac-3 {
     position: absolute;
-    left: 0px;
+    left: 1%;
     width: 30px !important;
     height: 30px;
     text-align:center;
@@ -418,14 +418,14 @@
 .button-ao-hoodie-2 {
     position: absolute;
     top: 50%;
-    right: 5px;
+    right: 1%;
     font-size: 30px;
 }
 
 .button-ao-hoodie-3 {
     position: absolute;
     top: 50%;
-    left: 5px;
+    left: 1%;
     font-size: 30px;
 }
 
@@ -948,13 +948,16 @@ display: none;
     display: block;
     margin-top: 0;
 }
-.pages:hover .pages {
+.pages:hover .pages2 {
     display: block;
     margin-top: 0;
 }
 
 .menuresponsive{
     background-color: white;
+    height: auto;
+    width: auto;
+
 }
 
 .imgmainpage{
@@ -1068,4 +1071,11 @@ display: none;
         margin-top: 0;
     }*/
     
+}
+
+.nav-item{
+    height: auto;
+}
+.navbar-nav .dropdown-menu {
+    position: absolute !important;
 }
